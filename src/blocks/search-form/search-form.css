@@ -1,0 +1,18 @@
+.search-form{
+  margin: 80px auto;
+  max-width: 608px;
+}
+
+@media screen and (max-width: 845px) {
+  .search-form {
+    margin: 38px auto 48px;
+    max-width: 452px;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .search-form {
+    margin: 30px auto 32px;
+    max-width: 288px;
+  }
+}

@@ -1,0 +1,8 @@
+.card__button_type_bin {
+  background-image: url(../../../../images/bin.svg);
+}
+
+.card__button_type_bin:hover {
+  background-image: url(../../../../images/bin-hover.svg);
+  transition: background-image .5s linear;
+}

@@ -1,0 +1,17 @@
+@import url(../../blocks/card/card.css);
+@import url(../../blocks/card/__tooltip/card__tooltip.css);
+@import url(../../blocks/card/__keyword/card__keyword.css);
+@import url(../../blocks/card/__button/card__button.css);
+@import url(../../blocks/card/__date/card__date.css);
+@import url(../../blocks/card/__photo/card__photo.css);
+@import url(../../blocks/card/__source/card__source.css);
+@import url(../../blocks/card/__text/card__text.css);
+@import url(../../blocks/card/__title/card__title.css);
+@import url(../../blocks/card/__button/_type/card__button_type_bookmark.css);
+@import url(../../blocks/card/__button/_type/card__button_type_bin.css);
+@import url(../../blocks/card/__button/_type/card__button_type_active.css);
+@import url(../../blocks/card/__tooltip/_type/card__tooltip_type_info.css);
+@import url(../../blocks/card/__tooltip/_type/card__tooltip_type_hint.css);
+@import url(../../blocks/card/__keyword/_type/card__keyword_type_info.css);
+@import url(../../blocks/card/__keyword/_type/card__keyword_type_hint.css);
+@import url(../../blocks/card/__tooltip/_visible/card__tooltip_visible.css);

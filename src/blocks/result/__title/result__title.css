@@ -1,0 +1,26 @@
+.result__title {
+  margin: 0 0 64px 104px;
+  padding: 0;
+  max-width: 712px;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 1.15;
+  color:#1A1B22;
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 845px) {
+  .result__title {
+    margin: 40px 0 32px 40px;
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+@media screen and (max-width: 631px) {
+  .result__title {
+    margin: 32px 0 24px 16px;
+  }
+}

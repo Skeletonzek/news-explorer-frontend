@@ -1,0 +1,10 @@
+.popup__change {
+  margin: 16px 0 28px 0;
+  padding: 0;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #000;
+}

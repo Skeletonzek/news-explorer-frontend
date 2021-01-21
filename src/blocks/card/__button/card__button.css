@@ -1,0 +1,38 @@
+.card__button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 24px;
+  right: 24px;
+  z-index: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.card__button:active {
+  transform: scale(.8, .8);
+}
+
+.card__button:hover {
+  cursor: url('../../../images/pointer.svg'), pointer;
+}
+
+@media screen and (max-width: 845px) {
+  .card__button {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+@media screen and (max-width: 631px) {
+  .card__button {
+    top: 16px;
+    right: 16px;
+  }
+}

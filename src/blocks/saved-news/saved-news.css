@@ -1,0 +1,21 @@
+.saved-news {
+  max-width: 712px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 40px 0 56px 104px;
+  height: fit-content;
+}
+
+@media screen and (max-width: 845px) {
+  .saved-news {
+    margin: 24px 0 32px 40px;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .saved-news {
+    margin: 8px auto 32px;
+    width: 90%;
+  }
+}
