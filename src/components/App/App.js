@@ -15,6 +15,11 @@ function App() {
   const [isRegisterPopupOpen, setRegisterPopupOpen] = React.useState(false);
   const [isLoginPopupOpen, setLoginPopupOpen] = React.useState(false);
   const [isSuccessPopupOpen, setSuccessPopupOpen] = React.useState(false);
+  const [isMenuOpen, setMenuOpen] = React.useState(false);
+
+  function handleMenuClick() {
+    setMenuOpen(true);
+  }
 
   function handleAuthClick() {
     closeAllPopupups();
@@ -35,21 +40,22 @@ function App() {
     setLoginPopupOpen(false);
     setRegisterPopupOpen(false);
     setSuccessPopupOpen(false);
+    setMenuOpen(false);
   }
 
   return (
     <div className="page">
-      <SuccessPopup isOpen={isSuccessPopupOpen} onClose={closeAllPopupups}/>
-      <LoginPopup isOpen={isLoginPopupOpen} onClose={closeAllPopupups} onRegisterClick={handleRegClick}/>
-      <RegisterPopup isOpen={isRegisterPopupOpen} onClose={closeAllPopupups} onSuccessClick={handleSuccessClick}/>
+      <SuccessPopup isOpen={isSuccessPopupOpen} onClose={closeAllPopupups} />
+      <LoginPopup isOpen={isLoginPopupOpen} onClose={closeAllPopupups} onRegisterClick={handleRegClick} />
+      <RegisterPopup isOpen={isRegisterPopupOpen} onClose={closeAllPopupups} onSuccessClick={handleSuccessClick} />
       <Route path="/saved-news">
-        <Header onAuthClick={handleAuthClick} />
+        <Header onAuthClick={handleAuthClick} onMenuClick={handleMenuClick} isOpen={isMenuOpen} onClose={closeAllPopupups} />
         <SavedNewsHeader />
         <SavedNews />
       </Route>
       <Route exact path="/">
         <div className="search">
-          <Header onAuthClick={handleAuthClick}/>
+          <Header onAuthClick={handleAuthClick} onMenuClick={handleMenuClick} isOpen={isMenuOpen} onClose={closeAllPopupups} />
           <SearchForm />
         </div>
         <Main />

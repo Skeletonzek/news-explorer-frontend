@@ -1,0 +1,33 @@
+.header__navigation-list_mobile-open {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  background-image: url(../../../../images/menu.svg);
+  display: none;
+  border: none;
+  align-self: center;
+}
+
+.header__navigation-list_mobile-open:hover {
+  opacity: .8;
+  cursor: url('../../../../images/pointer.svg'), pointer;
+  transition: opacity .5s linear;
+}
+
+@media screen and (max-width: 631px) {
+  .header__navigation-list_mobile-open {
+    display: block;
+    margin-right: 21px;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  .header__navigation-list_mobile-open {
+    margin-right: 16px;
+  }
+}

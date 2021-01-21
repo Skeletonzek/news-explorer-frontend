@@ -6,7 +6,7 @@
   color: #1A1B22;
 }
 
-.header__navigation-list_page_lk:last-child {
+.header__navigation-list_page_lk:nth-child(3) {
   border: 1px solid #D1D2D6;
   color: #1A1B22;
 }

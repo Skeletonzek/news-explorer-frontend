@@ -6,3 +6,15 @@
 @import url(../../blocks/header/__logout/_page/header__logout_page_lk.css);
 @import url(../../blocks/header/__navigation-list/_clicked/header__navigation-list_clicked.css);
 @import url(../../blocks/header/__navigation-list/_clicked-lk/header__navigation-list_clicked-lk.css);
+@import url(../../blocks/header/__navigation-list/_mobile-open/header__navigation-list_mobile-open.css);
+@import url(../../blocks/mobile-menu/mobile-menu.css);
+@import url(../../blocks/mobile-menu/__container/mobile-menu__container.css);
+@import url(../../blocks/mobile-menu/__link/mobile-menu__link.css);
+@import url(../../blocks/mobile-menu/__button/mobile-menu__button.css);
+@import url(../../blocks/mobile-menu/__container/_page/mobile-menu__container_page_lk.css);
+@import url(../../blocks/mobile-menu/__link/_page/mobile-menu__link_page_lk.css);
+@import url(../../blocks/mobile-menu/__button/_page/mobile-menu__button_page_lk.css);
+@import url(../../blocks/header/__navigation-list/_mobile-open/header__navigation-list_mobile-open_dark.css);
+@import url(../../blocks/mobile-menu/_opened/mobile-menu_opened.css);
+@import url(../../blocks/header/__navigation-list/_mobile-close/header__navigation-list_mobile-close.css);
+@import url(../../blocks/header/__navigation-list/_mobile-close/header__navigation-list_mobile-close_dark.css);
