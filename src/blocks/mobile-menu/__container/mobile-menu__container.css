@@ -1,0 +1,12 @@
+.mobile-menu__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1A1B22;
+  border-radius: 16px;
+  padding-top: 72px;
+}

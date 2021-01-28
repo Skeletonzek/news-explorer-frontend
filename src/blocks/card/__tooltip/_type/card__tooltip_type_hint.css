@@ -1,0 +1,25 @@
+.card__tooltip_type_hint {
+  right: 69px;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .card__tooltip_type_hint {
+    right: 24px;
+    top: 69px;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .card__tooltip_type_hint {
+    right: 8px;
+    top: 53px;
+  }
+}
+
+@media screen and (max-width: 631px) {
+  .card__tooltip_type_hint {
+    right: 16px;
+    top: 61px;
+  }
+}

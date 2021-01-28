@@ -1,0 +1,23 @@
+.header__logo {
+  margin: 30px 0 26px 104px;
+  padding: 0;
+  width: 200px;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+@media screen and (max-width: 845px) {
+  .header__logo {
+    margin: 23px 0 19px 40px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .header__logo {
+    margin: 16px 0 16px 16px;
+  }
+}

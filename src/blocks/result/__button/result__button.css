@@ -1,0 +1,42 @@
+.result__button {
+  margin: 64px 0 0 0;
+  padding: 0;
+  width: 288px;
+  height: 64px;
+  background-color: #fff;
+  border: none;
+  border-radius: 800px;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color:#1A1B22;;
+  outline: none;
+}
+
+.result__button:active {
+  transform: scale(.8, .8);
+}
+
+.result__button:hover {
+  opacity: .9;
+  cursor: url('../../../images/pointer.svg'), pointer;
+  transition: opacity .5 linear;
+}
+
+@media screen and (max-width: 845px) {
+  .result__button {
+    margin: 22px 0 0 0;
+    width: 240px;
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 631px) {
+  .result__button {
+    margin: 15px 0 0 0;
+    width: 288px;
+  }
+}

@@ -1,0 +1,8 @@
+.card__button_type_bookmark {
+  background-image: url(../../../../images/bookmark.svg);
+}
+
+.card__button_type_bookmark:hover {
+  background-image: url(../../../../images/bookmark-hover.svg);
+  transition: background-image .5s linear;
+}

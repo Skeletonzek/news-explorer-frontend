@@ -1,0 +1,9 @@
+.popup__submit_inactive {
+  background-color: #E6E8EB;;
+  color: unset;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

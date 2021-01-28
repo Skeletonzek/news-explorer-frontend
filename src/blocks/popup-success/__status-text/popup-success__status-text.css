@@ -1,0 +1,11 @@
+.popup-success__status-text {
+  margin: 43px 0 0 36px;
+  padding: 0;
+  align-self: flex-start;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.21;
+  color:#000000;
+}

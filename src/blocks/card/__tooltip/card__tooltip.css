@@ -1,0 +1,23 @@
+.card__tooltip {
+  position: absolute;
+  top: 24px;
+  height: 40px;
+  z-index: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 845px) {
+  .card__tooltip {
+    top: 8px;
+  }
+}
+
+@media screen and (max-width: 631px) {
+  .card__tooltip {
+    top: 16px;
+  }
+}

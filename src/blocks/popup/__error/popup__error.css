@@ -1,0 +1,26 @@
+.popup__error {
+  width: 358px;
+  min-height: 12px;
+  margin-bottom: 13px;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #ff0000;
+}
+
+.popup__error:nth-of-type(3) {
+  width: 200px;
+  margin: 14px 0 8px 0;
+  text-align: center;
+  align-self: center;
+}
+
+@media screen and (max-width: 429px) {
+  .popup__error {
+    width: 90%;
+    align-self: flex-start;
+    margin-left: 16px;
+  }
+}

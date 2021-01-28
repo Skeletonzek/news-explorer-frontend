@@ -1,0 +1,22 @@
+.result__list {
+  width: calc(100% - 14%);
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+  grid-gap: 16px 16px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 845px) {
+  .result__list {
+    width: calc(100% - 8%);
+    grid-gap: 8px;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .result__list {
+    width: calc(100% - 10%);
+    grid-gap: 10px;
+  }
+}

@@ -1,0 +1,21 @@
+.popup-success__login {
+  padding: 0;
+  margin: 14px 0 51px 36px;
+  background: none;
+  border: none;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color:#2F71E5;
+  outline: none;
+  align-self: flex-start;
+}
+
+.popup-.popup-success__login {
+  opacity: .8;
+  cursor: url('../../../images/pointer.svg'), pointer;
+  transition: opacity .5s linear;
+}
