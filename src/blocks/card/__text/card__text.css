@@ -1,7 +1,7 @@
 .card__text {
-  margin: 16px auto 18px;
+  margin: 16px auto 10px;
   padding: 0;
-  height: 88px;
+  height: 87px;
   width: calc(100% - 12%);
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   font-style: normal;
@@ -17,6 +17,12 @@
 
 @media screen and (max-width: 845px) {
   .card__text {
-    font-size: 16px;
+    margin: 10px auto 12px;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .card__text {
+    margin-bottom: 8px;
   }
 }

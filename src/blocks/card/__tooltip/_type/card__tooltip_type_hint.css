@@ -1,6 +1,9 @@
 .card__tooltip_type_hint {
   right: 69px;
   visibility: hidden;
+  padding-top: 16px;
+  font-size: 10px;
+  line-height: 1.2;
 }
 
 @media screen and (max-width: 1200px) {

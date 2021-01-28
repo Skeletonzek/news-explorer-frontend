@@ -1,34 +1,29 @@
-export const initialCards = [
-  {
-      name: 'Архыз',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
-  },
-  {
-      name: 'Челябинская область',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
-  },
-  {
-      name: 'Иваново',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
-  },
-  {
-      name: 'Камчатка',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
-  },
-  {
-      name: 'Холмогорский район',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
-  },
-  {
-      name: 'Байкал',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
-  }
-];
+const months = ['января', 'февраля', 'марта', 'апреля','мая','июня','июля','авгуса','сентября','октября','ноября','декабря'];
 
-export const popupAttribute = {
-  inputSelector: '.popup__text',
-  submitButtonSelector: '.popup__submit',
-  inactiveButtonClass: 'popup__submit_inactive',
-  inputErrorClass: 'popup__text_type_error',
-  errorClass: 'popup__error_visible'
-};
+export const dateNow = () => {
+  const date = new Date();
+  const day = date.getDate();
+  const month = date.getMonth();
+  const year = date.getFullYear();
+
+  return(`${year}-${month + 1}-${day}`);
+}
+
+export const dateWeekAgo = () => {
+  const dateWeekAgoMs = Date.now() - 604800000;
+  const date = new Date(dateWeekAgoMs);
+  const day = date.getDate();
+  const month = date.getMonth();
+  const year = date.getFullYear();
+
+  return(`${year}-${month + 1}-${day}`);
+}
+
+export const dateNews = (dateFromApi = "2021-01-23T01:06:27Z") => {
+  const date = new Date(dateFromApi);
+  const day = date.getDate();
+  const month = date.getMonth();
+  const year = date.getFullYear();
+
+  return(`${day} ${months[month]}, ${year}`);
+}

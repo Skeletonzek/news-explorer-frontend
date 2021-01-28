@@ -7,10 +7,11 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 1.25;
+  visibility: hidden;
   color: #ff0000;
 }
 
-.popup__error:nth-of-type(3) {
+.popup__error:nth-of-type(4) {
   width: 200px;
   margin: 14px 0 8px 0;
   text-align: center;

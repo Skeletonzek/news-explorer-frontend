@@ -1,48 +1,53 @@
 export const BASE_URL = 'https://api.ilyazhulanov.students.nomoredomains.rocks';
 
-export const register = (password, email) => {
+
+let status = 200;
+
+export const register = (email, password, name) => {
   return fetch(`${BASE_URL}/signup`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
+      email,
       password,
-      email})
+      name
+    })
   })
-  .then((response) => {
-    if (response.ok) {
+    .then((response) => {
+      status = response.status;
       return response.json()
-    }
-    return Promise.reject(response.status);
-  })
-  .then((res) => {
-    return res;
-  })
+    })
+    .then((res) => {
+      res.status = status;
+      return res;
+    })
 };
 
-export const authorize = (password, email) => {
+export const authorize = (email, password) => {
   return fetch(`${BASE_URL}/signin`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      password,
-      email})
+      email,
+      password
+    })
   })
-  .then((response) => {
-    if (response.ok) {
+    .then((response) => {
+      status = response.status;
       return response.json()
-    }
-    return Promise.reject(response.status);
-  })
-  .then((data) => {
-    if (data.token){
-      localStorage.setItem('jwt', data.token);
-      return data;
-    }
-  })
+    })
+    .then((res) => {
+      res.status = status;
+      if (res.token) {
+        localStorage.setItem('jwt', res.token);
+        return res;
+      }
+      return res;
+    })
 };
 
 export const checkToken = (token) => {
@@ -53,11 +58,12 @@ export const checkToken = (token) => {
       'Authorization': `Bearer ${token}`,
     }
   })
-  .then((response) => {
-    if (response.ok) {
+    .then((response) => {
+      status = response.status;
       return response.json()
-    }
-    return Promise.reject(response.status);
-  })
-  .then(data => data)
+    })
+    .then((res) => {
+      res.status = status;
+      return res;
+    })
 };

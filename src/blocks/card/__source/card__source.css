@@ -10,4 +10,11 @@
   letter-spacing: 0.4px;
   text-transform: uppercase;
   color: #B6BCBF;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 845px) {
+  .card__source {
+    margin-bottom: 16px;
+  }
 }

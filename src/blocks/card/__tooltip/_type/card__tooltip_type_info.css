@@ -1,5 +1,8 @@
 .card__tooltip_type_info {
   left: 24px;
+  padding-top: 8px;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 @media screen and (max-width: 845px) {

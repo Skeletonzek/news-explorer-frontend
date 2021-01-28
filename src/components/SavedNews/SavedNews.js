@@ -5,8 +5,8 @@ function SavedNews(props) {
 
   return (
     <main className="content">
-      <section className="result">
-        <NewsCardList />
+      <section className="result result_visible">
+        <NewsCardList savedNews={props.savedNews} onNewsDeleteClick={props.onNewsDeleteClick} onNewsAddClick={props.onNewsAddClick} />
       </section>
     </main>
   )

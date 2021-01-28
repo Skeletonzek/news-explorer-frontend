@@ -2,7 +2,7 @@
   width: calc(100% - 14%);
   display: grid;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+  grid-template-columns: repeat(3, minmax(224px, 1fr));;
   grid-gap: 16px 16px;
   justify-content: center;
 }
@@ -10,6 +10,7 @@
 @media screen and (max-width: 845px) {
   .result__list {
     width: calc(100% - 8%);
+    grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
     grid-gap: 8px;
   }
 }
