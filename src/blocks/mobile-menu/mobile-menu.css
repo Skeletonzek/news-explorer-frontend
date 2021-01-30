@@ -10,3 +10,9 @@
   top: 0;
   left: 0;
 }
+
+@media screen and (min-width: 631px) {
+  .mobile-menu {
+    display: none;
+  }
+}

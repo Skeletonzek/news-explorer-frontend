@@ -12,13 +12,13 @@ function Footer() {
           <Link to="/" className="footer__link">Главная</Link>
         </li>
         <li className="footer__link-list">
-          <a href="https://praktikum.yandex.ru" className="footer__link" target="_blank">Яндекс.Практикум</a>
+          <a href="https://praktikum.yandex.ru" className="footer__link" target="_blank" rel="noopener noreferrer">Яндекс.Практикум</a>
         </li>
         <li className="footer__link-list">
-          <a href="https://github.com/Skeletonzek" className="footer__link" target="_blank"><img className="footer__link-icon" src={github} alt="гитхаб иконка"></img></a>
+          <a href="https://github.com/Skeletonzek" className="footer__link" target="_blank" rel="noopener noreferrer"><img className="footer__link-icon" src={github} alt="гитхаб иконка"></img></a>
         </li>
         <li className="footer__link-list">
-          <a href="https://www.facebook.com/profile.php?id=100001911285647" className="footer__link" target="_blank"><img className="footer__link-icon" src={fb} alt="фб иконка"></img></a>
+          <a href="https://www.facebook.com/profile.php?id=100001911285647" className="footer__link" target="_blank" rel="noopener noreferrer"><img className="footer__link-icon" src={fb} alt="фб иконка"></img></a>
         </li>
       </ul>
     </footer>

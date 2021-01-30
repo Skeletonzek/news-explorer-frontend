@@ -1,24 +1,16 @@
 import React from 'react';
 import NewsCard from '../NewsCard/NewsCard';
-import taiga from '../../images/taiga.jpg';
-import park from '../../images/park.jpg';
-import forrestFire from '../../images/forrest-fire.jpg'
+import { useLocation } from 'react-router-dom';
 
 function NewsCardList(props) {
+  const currentPath = useLocation();
 
   return (
     <div className="result__list">
-      <NewsCard title="Национальное достояние – парки" text="В 2016 году
-          Америка отмечала важный юбилей:
-          сто лет назад здесь начала складываться система национальных парков
-          – охраняемых территорий, где и сегодня каждый может приобщиться к природе."
-        source="лента.ру" img={park} />
-        <NewsCard title="Лесные огоньки: история одной фотографии" text="Фотограф отвлеклась от освещения суровой
-        политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы."
-        source="медуза" img={forrestFire} />
-        <NewsCard title="«Первозданная тайга»: новый фотопроект Игоря Шпиленка" text="Знаменитый фотограф снимает первозданные леса России,
-        чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где..."
-        source="риа" img={taiga} />
+      {currentPath.pathname === '/' && props.news.slice(0, props.count).map((news, index) => (<NewsCard key={index} _id={index} savedNews={props.savedNews} source={news.source.name}
+        title={news.title} date={news.publishedAt} text={news.description} img={news.urlToImage} link={news.url} isLogged={props.isLogged} onNewsAddClick={props.onNewsAddClick} onNewsDeleteClick={props.onNewsDeleteClick} />))}
+      {currentPath.pathname === '/saved-news' && props.savedNews.map((news) => (<NewsCard key={news._id} _id={news._id} source={news.source} savedNews={props.savedNews}
+        title={news.title} date={news.date} text={news.text} img={news.image} keyword={news.keyword} link={news.link} onNewsDeleteClick={props.onNewsDeleteClick} onNewsAddClick={props.onNewsAddClick} />))}
     </div>
   )
 }
